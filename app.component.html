@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<input type="text" [(ngModel)]="title">
+<button class="btn btn-primary" type="button" (click)="changeLogo()">Changer le logo</button>
+
+<img [src]="url" alt="logo angular">
+<p>
+  Longueur du titre:{{title.length}}
+</p>
+<p>
+  titre inverse:{{getReversed(title)}}
+</p>
+<ul>
+  <li *ngFor="let classe of classes">{{classe}}</li>
+</ul>
